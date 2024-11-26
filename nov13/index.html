@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // 1. Employee Salary Update: You have a list of employee salaries [30000, 45000, 50000, 35000]. 
+    // Increase each salary by 10% and create a new array with the updated salaries.                                                       
+  const arr=[30000, 45000, 50000, 35000]
+  const op=arr.map((value) => value+(value*10/100))
+  console.log(op)
+
+  // 2. Odd Numbers Only: Given an array of daily sales numbers [23, 45, 60, 70, 33],
+  //  filter out only the odd sales numbers to analyze specific buying patterns.  
+  arr=[23, 45, 60, 70, 33]
+  const filtereddata=arr.filter((value)=>value%2!==0)
+  console.log(filtereddata)
+
+
+
+  // 3. Product Price Tag Update: You have a list of product names in lowercase ['soap', 'shampoo', 'toothpaste'].
+  //  Capitalize each product name to display on tags.
+  arr= ['soap', 'shampoo', 'toothpaste']
+  const productname=arr.filter((arr) => arr[0].touppercase+arr.slice(1))
+  console.log(productname)
+
+
+  // 4. Student Passing Scores: From an array of student scores [55, 70, 82, 47],
+  //  filter out scores that are above 50 to get a list of students who passed.  
+  studentscores= [55, 70, 82, 47]
+  PassingScores=studentscores.filter((studentscores) => studentscores>50)
+  console.log(PassingScores)
+
+
+  // 5. Customer Names Extraction: You have an array of customer records 
+  // [{'name': 'Alice'}, {'name': 'Bob'}, {'name': 'Charlie'}]. Extract just the names 
+  // for a promotional email list.
+  const records =[{'name': 'Alice'}, {'name': 'Bob'}, {'name': 'Charlie'}]
+   const email=records.map((email) =>email.name)
+  console.log(email)
+
+  // -------------------------------------------------------------------------------------------------
+  // 1. Calculate Product of All Items: For an array of order quantities [1, 3, 5, 2], 
+  // calculate the product ofall quantities to determine total inventory.
+     arr=[1, 3, 5, 2]
+     const quantities=arr.filter((value1,value2) =>value1*value2)
+     console.log(quantities)
+  </script>
+</body>
+</html>
